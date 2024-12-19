@@ -1,0 +1,26 @@
+{
+  "name": "ploome2etests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --debug",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome:headed": "npx playwright test --headed --project=chromium",
+    "test:report": "npx playwright show-report",
+    "format": "prettier --write '**/*.{js,ts,json,md}'"
+  },
+  "keywords": [
+    "playwright",
+    "end-to-end testing",
+    "automation"
+  ],
+  "author": "Sebastian",
+  "license": "MIT",
+  "description": "End-to-end tests for the Ploom website",
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "22.10.2",
+    "prettier": "3.0.3"
+  }
+}
