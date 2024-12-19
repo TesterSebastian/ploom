@@ -81,7 +81,6 @@ The following scripts are available in `package.json`:
 - **`test:chrome:headed`**: Runs tests in headed mode with Chromium.
 - **`test:report`**: Displays the Playwright HTML report.
 - **`format`**: Formats code using Prettier.
-- **`lint`**: Lints code using ESLint.
 
 ## Configuration
 The Playwright configuration is defined in `playwright.config.ts`. Key settings include:
@@ -114,12 +113,7 @@ test('should add a product to the cart', async ({ page }) => {
 });
 ```
 
-## Linting and Formatting
-
-### Lint Code
-```bash
-npm run lint
-```
+## Formatting
 
 ### Format Code
 ```bash
