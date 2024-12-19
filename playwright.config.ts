@@ -38,7 +38,8 @@ export default defineConfig({
     {
       name: "firefox",
       use: {
-        ...devices["Desktop Firefox"]
+        ...devices["Desktop Firefox"],
+        viewport: { width: 1600, height: 800 }
       },
     }
   ],
