@@ -15,9 +15,9 @@ class Utils {
           const response = await page.request.fetch(link, { method: "HEAD" });
           expect(response.status(), `Broken link: ${link}`).toBeLessThan(400);
         } else if (link.startsWith("tel:")) {
-          console.log(`Skipped tel link: ${link}`);
+         throw new Error(`Skipped unsupported protocol (tel): ${link}`);
         } else {
-          console.warn(`Unknown link protocol: ${link}`);
+          throw new Error(`Unknown link protocol: ${link}`);
         }
       }),
       ...images.map(async (src) => {
